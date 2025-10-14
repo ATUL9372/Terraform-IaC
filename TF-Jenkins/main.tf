@@ -44,7 +44,7 @@ resource "local_file" "LTF_private_key" {
 // Upload public key to AWS 
 resource "aws_key_pair" "own_ssh_key"{
     key_name = "${var.aws_create_key_pair_name}"
-    public_key = "tls_private_key.LTF_Key_Pair.public_key_openssh"
+    public_key = tls_private_key.LTF_Key_Pair.public_key_openssh
 }
 
 
