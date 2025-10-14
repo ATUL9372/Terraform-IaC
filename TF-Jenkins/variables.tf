@@ -25,8 +25,7 @@ variable "server_ami" {
 variable "server_type" {
   type = string
   default = "t2.micro"
-  description = "Instance config default is 
-  vCPU: 1 and RAM: 1"
+  description = "Instance config default is vCPU: 1 and RAM: 1"
 
 }
 
@@ -80,27 +79,24 @@ variable "delete_on_termination"{
 variable "aws_create_key_pair_name"{
   type = string
   default = "atul_terraform_KP"
+  description = "Name for the AWS key pair"
 }
-
-//variable "public_ssh_key"{
-//  type = string
-//}
-
 
 // Security group
 
-variable ""{
+variable "aws_security_group_name"{
   type = string
+  default = "atul_terraform_SG"
 }
 
-variable ""{
+variable "aws_security_group_description"{
   type = string
+  default = "Security group for terraform Server check tags"
 }
 
-variable ""{
-  type = string
+variable "allowed_ports"{
+  type = list(number)
+  description = "List of inbound(incoming) TCP ports to allow"
+  
 }
-
-
-// Security group
 
