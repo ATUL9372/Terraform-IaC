@@ -18,7 +18,7 @@ variable "secret_key" {
 
 variable "server_ami" {
   type = string
-  default = "ami-00cd1596c62928384"
+  default = "ami-07f07a6e1060cd2a8"
   description = "This ami is ubuntu 24.04"
 }
 
