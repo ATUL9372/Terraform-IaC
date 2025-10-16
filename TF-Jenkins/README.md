@@ -69,16 +69,16 @@ This helps achieve **fast environment recovery**, **consistent CI/CD setups**, a
 
 ## ⚙️ Step-by-Step Terraform Workflow
 
-### 1 Initialize Terraform
+### 1. Initialize Terraform
 ```bash
 terraform init
 ```
-### 2 Terraform Apply
+### 2. Terraform Apply
 ```bash
 terraform apply
 ```
 
-### 3 Terraform destroy
+### 3. Terraform destroy
 ```bash
 terraform destroy
 ```
